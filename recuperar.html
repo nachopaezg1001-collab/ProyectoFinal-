@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- HEADER -->
+  <header class="header">
+    <div class="logo"><a href="index.html" style="text-decoration: none;"><img src="ChatGPT Image 2 dic 2025, 12_54_44 a.m..png"
+      width="120" height="80"></a></div>
+    <div class="icons">
+      ❤️ <span id="favCount">0</span>
+      🛒 <span id="cartCount">0</span>
+      ❓
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="#">Destacado</a>
+    <a href="#">Contacto</a>
+    <a href="fav.html">Favoritos</a>
+    <a href="cart.html">Carrito</a>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="main-content" style="padding: 50px 20px; text-align:center;">
+    <h2 style="color: white;">Recuperar Contraseña</h2>
+    <br>
+    <p style="color: white;">Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</p>
+    <br>
+    <form id="recuperarForm" style="max-width:400px; margin: 0 auto;">
+      <input type="email" id="recuperarEmail" placeholder="Correo electrónico" required>
+      <button type="submit">Enviar enlace</button>
+    </form>
+    <br>
+    <p id="mensaje" style="margin-top:20px; color:green; font-weight:bold;"></p>
+    <a href="index.html" style="display:block; margin-top:15px; color:#ffffff; text-decoration:none;">Volver al inicio</a>
+  </main>
+
+  <footer class="arcadia-footer">
+    <div class="footer-content">
+
+        <!-- Columna izquierda: Logo -->
+        <div class="footer-col footer-logo">
+            <a href="index.html" style="text-decoration: none;"><img src="ChatGPT Image 2 dic 2025, 12_54_44 a.m..png" alt="Arcadia Logo"></a>
+        </div>
+
+        <!-- Columna central: dos columnas de links -->
+        <div class="footer-col footer-links">
+            <div class="links-col">
+                <h4>Navegación</h4>
+                <a href="#">Inicio</a>
+                <a href="#">Juegos</a>
+                <a href="#">Categorías</a>
+                <a href="#">Noticias</a>
+                <a href="#">Soporte</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Información</h4>
+                <a href="#">Quiénes somos</a>
+                <a href="#">Términos</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="footer-col footer-info">
+
+            <div class="social">
+                <h4>Redes</h4>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj-5oKaiZ-RAxXwErkGHUanCrMQFnoECAwQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fsteam_games_official%2F%3Fhl%3Des&usg=AOvVaw1OLbAP8uUGLeVGV8DR2A9r&opi=89978449">
+                    <span class="icon instagram"></span> Instagram
+                </a>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiL_auViJ-RAxWmD7kGHSqcKr4QFnoECC8QAQ&url=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F193399494192518%2F%3Flocale%3Des_LA&usg=AOvVaw0_mVzBYSnWv7RQZfmbw1pT&opi=89978449">
+                    <span class="icon facebook"></span> Facebook
+                </a>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiAiJm5iZ-RAxWFBrkGHbIOL1EQFnoECAwQAQ&url=https%3A%2F%2Fwww.youtube.com%2F%40Steam&usg=AOvVaw3nuldWfhlZiTJDnbh_1ngS&opi=89978449">
+                    <span class="icon youtube"></span> YouTube
+                </a>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiPp_LPiZ-RAxV7H7kGHSXbOmkQFnoECAwQAQ&url=https%3A%2F%2Fdiscord.com%2Finvite%2Fy8mcERS&usg=AOvVaw1p5cYX5ohfluZjKO8LuRWy&opi=89978449">
+                    <span class="icon discord"></span> Discord
+                </a>
+            </div>
+
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <p>Email: contacto@arcadia.com</p>
+                <br>
+                <p>Tel: +54 9 381 359 2441</p>
+                <br>
+            </div>
+
+            <div class="qr">
+                <img src="qr_arcadia.png" alt="Data Fiscal" width="95">
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-copy">
+        © 2025 Arcadia. Todos los derechos reservados.
+    </div>
+    
+</footer>
+
+  <script>
+    // Simulación de envío de enlace
+    const form = document.getElementById('recuperarForm');
+    const mensaje = document.getElementById('mensaje');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const email = document.getElementById('recuperarEmail').value;
+      if(email){
+        mensaje.textContent = "Se ha enviado un enlace de recuperación a " + email;
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>

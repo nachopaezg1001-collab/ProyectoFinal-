@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <header class="header">
+  <div class="logo"><a href="index.html" style="text-decoration: none;"><img src="ChatGPT Image 2 dic 2025, 12_54_44 a.m..png"
+      width="120" height="80"></a></div>
+  <a href="index.html">← Volver</a>
+  <div class="icons">
+    ❤️ <span id="favCount">0</span>
+    🛒 <span id="cartCount">0</span>
+  </div>
+</header>
+
+<main>
+  <h2>Favoritos</h2>
+  <div id="favList" class="grid"></div>
+</main>
+
+<footer class="arcadia-footer">
+    <div class="footer-content">
+
+        <!-- Columna izquierda: Logo -->
+        <div class="footer-col footer-logo">
+            <a href="index.html" style="text-decoration: none;"><img src="ChatGPT Image 2 dic 2025, 12_54_44 a.m..png" alt="Arcadia Logo"></a>
+        </div>
+
+        <!-- Columna central: dos columnas de links -->
+        <div class="footer-col footer-links">
+            <div class="links-col">
+                <h4>Navegación</h4>
+                <a href="#">Inicio</a>
+                <a href="#">Juegos</a>
+                <a href="#">Categorías</a>
+                <a href="#">Noticias</a>
+                <a href="#">Soporte</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Información</h4>
+                <a href="#">Quiénes somos</a>
+                <a href="#">Términos</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="footer-col footer-info">
+
+            <div class="social">
+                <h4>Redes</h4>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj-5oKaiZ-RAxXwErkGHUanCrMQFnoECAwQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fsteam_games_official%2F%3Fhl%3Des&usg=AOvVaw1OLbAP8uUGLeVGV8DR2A9r&opi=89978449">
+                    <span class="icon instagram"></span> Instagram
+                </a>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiL_auViJ-RAxWmD7kGHSqcKr4QFnoECC8QAQ&url=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F193399494192518%2F%3Flocale%3Des_LA&usg=AOvVaw0_mVzBYSnWv7RQZfmbw1pT&opi=89978449">
+                    <span class="icon facebook"></span> Facebook
+                </a>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiAiJm5iZ-RAxWFBrkGHbIOL1EQFnoECAwQAQ&url=https%3A%2F%2Fwww.youtube.com%2F%40Steam&usg=AOvVaw3nuldWfhlZiTJDnbh_1ngS&opi=89978449">
+                    <span class="icon youtube"></span> YouTube
+                </a>
+
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiPp_LPiZ-RAxV7H7kGHSXbOmkQFnoECAwQAQ&url=https%3A%2F%2Fdiscord.com%2Finvite%2Fy8mcERS&usg=AOvVaw1p5cYX5ohfluZjKO8LuRWy&opi=89978449">
+                    <span class="icon discord"></span> Discord
+                </a>
+            </div>
+
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <p>Email: contacto@arcadia.com</p>
+                <br>
+                <p>Tel: +54 9 381 359 2441</p>
+                <br>
+            </div>
+
+            <div class="qr">
+                <img src="qr_arcadia.png" alt="Data Fiscal" width="95">
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-copy">
+        © 2025 Arcadia. Todos los derechos reservados.
+    </div>
+    
+</footer>
+
+<script src="js/cart.js"></script>
+<script src="js/fav.js"></script>
+<script>
+let favList = document.getElementById("favList");
+let productos = [];
+let fav = JSON.parse(localStorage.getItem("fav")) || [];
+
+fetch("./data/productos.json")
+  .then(res => res.json())
+  .then(data => {
+    productos = data;
+    mostrarFavoritos();
+  });
+
+function mostrarFavoritos() {
+  favList.innerHTML = "";
+  fav.forEach(id => {
+    const prod = productos.find(p => p.id === id);
+    if (prod) {
+      const div = document.createElement("div");
+      div.className = "productCard";
+      div.innerHTML = `
+        <img src="${prod.imagen}" alt="${prod.nombre}">
+        <h3>${prod.nombre}</h3>
+        <p>$${prod.precio}</p>
+        <button onclick="addToCart(${prod.id})">🛒 Comprar</button>
+      `;
+      favList.appendChild(div);
+    }
+  });
+}
+</script>
+</body>
+</html>

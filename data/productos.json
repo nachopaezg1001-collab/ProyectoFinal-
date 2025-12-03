@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cyberpunk 2077",
+    "precio": 30.99 ,
+    "imagen": "https://i.pinimg.com/1200x/bf/25/b0/bf25b03c1a0bf20056ed1bd8c13bf65e.jpg",
+    "descripcion": "Explora Night City, una metrópolis obsesionada con el poder, el glamour y la modificación corporal."
+  },
+  {
+    "id": 2,
+    "nombre": "Elden Ring",
+    "precio": 40.99,
+    "imagen": "https://i.pinimg.com/736x/39/a3/72/39a372c2ac6e2961a799c026af42b794.jpg",
+    "descripcion": "Un RPG de fantasía oscura creado por FromSoftware, con un mundo abierto lleno de misterios y jefes desafiantes."
+  },
+  {
+    "id": 3,
+    "nombre": "Red Dead Redemption 2",
+    "precio": 14.99,
+    "imagen": "https://i.pinimg.com/736x/d1/13/9b/d1139b1ee12965f315652a3eb970aa28.jpg",
+    "descripcion": "Vive la vida del forajido Arthur Morgan en el salvaje oeste con una historia épica y un mundo abierto impresionante."
+  },
+  {
+    "id": 4,
+    "nombre": "Grand Theft Auto V",
+    "precio": 49.99,
+    "imagen": "https://i.pinimg.com/736x/b8/e1/8e/b8e18e6be3f2d04729717afd4e656556.jpg",
+    "descripcion": "Acción y aventura en Los Santos con tres protagonistas, misiones, coches y un mundo abierto enorme."
+  },
+  {
+    "id": 5,
+    "nombre": "God of War (2018)",
+    "precio": 29.99,
+    "imagen": "https://i.pinimg.com/736x/9f/60/f3/9f60f3997b114eced69f2cf5326e98bd.jpg",
+    "descripcion": "Kratos regresa en una épica historia de mitología nórdica con combate brutal y narrativa profunda."
+  },
+  {
+    "id": 6,
+    "nombre": "The Witcher 3: Wild Hunt",
+    "precio": 24.99,
+    "imagen": "https://i.pinimg.com/736x/06/f0/a8/06f0a88808fe136dcc35c791bb71d032.jpg",
+    "descripcion": "Acompaña a Geralt de Rivia en un mundo abierto lleno de monstruos, intrigas políticas y decisiones complejas."
+  },
+  {
+    "id": 7,
+    "nombre": "Call of Duty: Modern Warfare II (2022)",
+    "precio": 59.99,
+    "imagen": "https://i.pinimg.com/1200x/de/75/dc/de75dcce49c5189b6a52a5d212c88e45.jpg",
+    "descripcion": "FPS moderno con campañas cinematográficas y multijugador competitivo online."
+  },
+  {
+    "id": 8,
+    "nombre": "Minecraft",
+    "precio": 9.99,
+    "imagen": "https://i.pinimg.com/736x/9a/31/16/9a3116733571bb94a1c57220400f747a.jpg",
+    "descripcion": "Construye y explora mundos infinitos, sobreviví a criaturas y crea tus propias aventuras en este juego icónico."
+  },
+  {
+    "id": 9,
+    "nombre": "Fortnite",
+    "precio": 0,
+    "imagen": "https://i.pinimg.com/736x/86/7d/9f/867d9f7ce52f67148daeb6ff316591f7.jpg",
+    "descripcion": "Battle Royale gratuito con construcción, eventos en vivo y modos creativos."
+  },
+  {
+    "id": 10,
+    "nombre": "Dark Souls 3",
+    "precio": 44.99,
+    "imagen": "https://i.pinimg.com/736x/b4/ca/46/b4ca46019499accf501b984601460e1a.jpg",
+    "descripcion": "RPG ambientado en el mundo mágico de Harry Potter, donde puedes asistir a Hogwarts y explorar el mundo mágico abierto."
+  },
+  {
+    "id": 11,
+    "nombre": "Resident Evil 4 Remake",
+    "precio": 29.99,
+    "imagen": "https://i.pinimg.com/1200x/66/48/ce/6648ce96f855af1ff2642068fca24b53.jpg",
+    "descripcion": "Remake del clásico survival horror con gráficos modernos y gameplay renovado."
+  },
+  {
+    "id": 12,
+    "nombre": "Assassin’s Creed Valhalla",
+    "precio": 44.99,
+    "imagen": "https://i.pinimg.com/1200x/4e/71/03/4e7103f880d456f26b6802844888dc43.jpg",
+    "descripcion": "Conviértete en Eivor, un vikingo que lidera invasiones en Inglaterra, con exploración y combates épicos."
+  },
+  {
+    "id": 13,
+    "nombre": "FIFA 24",
+    "precio": 49.99,
+    "imagen": "https://i.pinimg.com/736x/f2/7b/8f/f27b8fa1c00ba3c3f8b44c5844cffda7.jpg",
+    "descripcion": "Juego de simulación de fútbol con ligas, equipos y modos online competitivos."
+  },
+  {
+    "id": 14,
+    "nombre": "Dead by Daylight",
+    "precio": 39.99,
+    "imagen": "https://i.pinimg.com/1200x/9d/c8/4c/9dc84c7cfde98e444f4d7e3345792e8e.jpg",
+    "descripcion": "Battle Royale gratuito con héroes únicos y habilidades especiales, en combates rápidos y estratégicos."
+  },
+  {
+    "id": 15,
+    "nombre": "Fear and Hunger",
+    "precio": 4.99,
+    "imagen": "https://i.pinimg.com/736x/6e/0d/fd/6e0dfd4ff8a66e6e0528f1a347952e00.jpg",
+    "descripcion": "RPG de terror hardcore con exploración oscura, combates estratégicos y una historia perturbadora."
+  }
+]
